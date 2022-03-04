@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width" />
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="shortcut icon" href="favicon.ico" />
 	<script src="https://kit.fontawesome.com/adbb9513cb.js" crossorigin="anonymous"></script> <!-- mise en place du script du site fontawesome qui permet d'accéder aux icones de leur site-->
 	<script src="script.js"></script>
 
@@ -11,21 +12,21 @@
 </head>
 <body>
 	<div id="blocPage">
-		<!-- Menu latéral gauche fixe-->
+		<!-- Menu fixé -->
 		<nav>
-			<h2>Menu</h2>
+			<h1>Menu</h1>
 			<ul>
 				<li><a href="#">Présentation</a></li>
 				<li><a href="#blocCompetences">Compétences</a></li>
 				<li><a href="#blocRealisation">Projets</a></li>
 			</ul>
-			
+
 		</nav>
 		
 		<!-- Partie principale du site comprenant le header et les différentes sections -->
 		<div id="blocCorps">
 			<header>
-				<a href="index.html" id="nom">GARCIA Jean-Loïc</a>
+				<h1><a href="index.html" id="nom">JLG GARCIA Jean-Loïc</a></h1>
 				<!-- Liste des liens sous forme d'icones dans le header -->
 				<ul>
 					<li><a href="https://github.com/GarciaJLoic" class="fa-brands fa-github" title="GitHub"></a></li> <!-- icone issu du site fontawesome  -->
@@ -33,166 +34,162 @@
 					<li class="projetsFuturs" title="A venir"><a href="#" class="fa-brands fa-linkedin" title="Linkedin"></a></li> 
 				</ul>
 			</header>		
-			<div id="contenu">
-				<!-- Partie présentation -->
-				<section id="blocPresentation">
-					<div id="textePresentation">
-						<h1>Développeur<br/> en devenir</h1>
-						<h2>À la recherche d'une formation dans le développement Web.</h2>
+			<!-- Partie présentation -->
+			<section id="blocPresentation">
+				<div id="textePresentation">
+					<h1>Développeur<br/> en devenir</h1>
+					<h2>À la recherche d'une formation dans le développement Web.</h2>
+					<p>
+						Après avoir travaillé pendant plusieurs années en restauration. Je souhaite retourner à ma première passion, le développement, que j'ai pu découvrir en autodidacte il y a une dizaine d'année et appliquer ensuite au sein d'une agence de communication pendant près d'un an.
+					</p>
+					<p>
+						Je souhaite dans un premier temps, suivre une formation dans le développement Web, avant de me spécialiser dans le développement Back-End ou dans le développement d'applications.
+					</p>
+				</div>
+				<!-- Ensemble de langages de développement sous-forme d'icone avec une animation au survol des boutons -->
+				<div id="langages">
+					<div id="iconeBloc">
+						<span class="eca iconeLang fa-brands fa-html5"></span>
+						<span class="av iconeLang fa-brands fa-php"></span>
+						<span class="av iconeLang fa-brands fa-python"></span>
+						<span class="eca iconeLang fa-brands fa-css3"></span>
+						<span class="av iconeLang fa-brands fa-java"></span>
+						<span class="eca iconeLang fa-brands fa-js"></span>		
+					</div>
+					<p class="maitrise"> Pas encore de langage maitrisé</p>
+					<ul>
+						<li class="bouton" onmouseover="classeAjout('maitrise',' maitriseH')" onmouseleave="classeSuppr('maitrise',' maitriseH')">Langages maitrisés</li>
+						<li  class="bouton" onmouseover="classeAjout('eca',' ecaH')" onmouseleave="classeSuppr('eca',' ecaH')">En cours d'apprentissage</li>
+						<li  class="bouton" onmouseover="classeAjout('av',' avH')" onmouseleave="classeSuppr('av',' avH')">À venir</li>
+					</ul>
+
+				</div>
+			</section>
+			<!-- Textes de présentation des différentes compétences -->
+			<section id="blocCompetences">
+				<h1>
+					Compétences
+				</h1>
+				<div class="competences">
+					<span class="icone fa-solid fa-handshake-angle"></span>
+					<div class="competencesTextes">
+						<h3> Travailler en équipe
+						</h3>
 						<p>
-							Après avoir travaillé pendant plusieurs années en restauration. Je souhaite retourner à ma première passion, le développement, que j'ai pu découvrir en autodidacte il y a une dizaine d'année et d'appliquer ensuite au sein d'une agence de communication pendant près d'un an.
+							Mes années de travail en restauration où le maître-mot est l'entraide, m'ont permis d'améliorer mon esprit d'équipe ainsi que la qualité de la communication entre collègues. Des atouts importants dans de nombreux aspects du développement.
 						</p>
+					</div>
+				</div>
+				<div class="competences">
+					<span class="icone fa-solid  solid fa-chalkboard-user"></span>
+					<div class="competencesTextes">
+						<h3> Rigueur, autonomie
+						</h3>
 						<p>
-							Je souhaite dans un premier temps, suivre une formation dans le développement Web, avant de me spécialiser dans le développement Back-End ou dans le développement d'applications.
+							Si certains aspects de la restauration nécessitent de travailler en équipe, d'autres requièrent un important degré d'autonomie et de rigueur. Tout comme dans le développement où une importante partie du travail est individuelle.
 						</p>
 					</div>
-					<!-- Ensemble de langages de développement sous-forme d'icone avec une animation au survol des boutons -->
-					<div id="langages">
-						<div id="iconeBloc">
-							<span class="eca iconeLang fa-brands fa-html5"></span>
-							<span class="av iconeLang fa-brands fa-php"></span>
-							<span class="av iconeLang fa-brands fa-python"></span>
-							<span class="eca iconeLang fa-brands fa-css3"></span>
-							<span class="av iconeLang fa-brands fa-java"></span>
-							<span class="eca iconeLang fa-brands fa-js"></span>		
-						</div>
-						<p class="maitrise"> Pas encore de langage maitrisé</p>
-						<ul>
-							<li class="bouton" onmouseover="changeStyleMouseOver('maitrise',' maitriseH')" onmouseleave="changeStyleMouseLeave('maitrise',' maitriseH')">Langages maitrisés</li>
-							<li  class="bouton" onmouseover="changeStyleMouseOver('eca',' ecaH')" onmouseleave="changeStyleMouseLeave('eca',' ecaH')">En cours d'apprentissage</li>
-							<li  class="bouton" onmouseover="changeStyleMouseOver('av',' avH')" onmouseleave="changeStyleMouseLeave('av',' avH')">A venir</li>
-						</ul>
+				</div>
+				<div class="competences">
+					<span class="icone fa-solid  fa-calendar-check"></span>
+					<div class="competencesTextes">
+						<h3> Organisation
 
+						</h3>
+						<p>
+							Que ce soit lors de la mise en place du poste de travail, de la gestion d'un service ou de la cuisine en général, l'organisation est essentielle. Ces acquis sont tout aussi important dans le développement et permettent entre autre une gestion efficace des projets, l'optimisation du temps de travail et le respect des délais.
+						</p>
 					</div>
-				</section>
-				<!-- Textes de présentation des différentes compétences -->
-				<section id="blocCompetences">
-					<h2>
-						Compétences
-					</h2>
-					<div class="competences">
-						<span class="icone fa-solid fa-handshake-angle"></span>
-						<div class="competencesTextes">
-							<h3> Travailler en équipe
-							</h3>
-							<p>
-								Mes années de travail en restauration où le maître-mot est l'entraide m'ont permis d'améliorer mon esprit d'équipe ainsi que la qualité de la communication entre collègues, des qualités importantes dans de nombreux aspects du développement.
-							</p>
-						</div>
+				</div>
+				<div class="competences">
+					<span class="icone fa-solid  fa-magnifying-glass"></span>
+					<div class="competencesTextes">
+						<h3> Curiosité
+						</h3>
+						<p>
+							Que ce soit d'un point de vue personnel ou professionnel, la curiosité est un point important de ma personnalité. J'ai pu dans le cadre de mon travail découvrir de nombreux postes qui vont de la plonge au service à table, en passant par la réalisation des plannings de l'équipe et des commandes fournisseurs. Je profite de chaque opportunité qui s'offre à moi pour découvrir de nouvelles choses et acquérir de nouvelles compétences.
+						</p>
 					</div>
-					<div class="competences">
-						<span class="icone fa-solid  solid fa-chalkboard-user"></span>
-						<div class="competencesTextes">
-							<h3> Rigueur, autonomie
-							</h3>
-							<p>
-								Si certains aspects de la restauration nécessitent de travailler en équipe, d'autres requiert un important degré d'autonomie et de rigueur. Tout comme dans le développement où une importante partie du travail est individuelle.
-							</p>
-						</div>
-					</div>
-					<div class="competences">
-						<span class="icone fa-solid  fa-calendar-check"></span>
-						<div class="competencesTextes">
-							<h3> Organisation
+				</div>
 
-							</h3>
-							<p>
-								Que ce soit lors de la mise en place du poste de travail, de la gestion d'un service ou de la cuisine en général, l'organisation est essentielle. Ces acquis sont tout aussi important dans le développement et permettent entre autre une gestion efficace des projets, l'optimisation du temps de travail let le respect des délais.
-							</p>
-						</div>
-					</div>
-					<div class="competences">
-						<span class="icone fa-solid  fa-magnifying-glass"></span>
-						<div class="competencesTextes">
-							<h3> Curiosité
-							</h3>
-							<p>
-								Que ce soit d'un point de vue personnel ou professionnel, la curiosité est un point important de ma personnalité. J'ai pu dans le cadre de mon travail découvrir de nombreux postes qui vont de la plonge au service à table, en passant par la réalisation des plannings de l'équipe et des commandes fournisseur. Je profite de chaque opportunité qui s'offre à moi pour découvrir de nouvelles choses et acquérir de nouvelles compétences.
-							</p>
-						</div>
-					</div>
-
-				</section>
+			</section>
 				<!-- Présentation des différentes réalisations et liens vers un descriptif complet de chacun des projets
 				La section est utilisée sur la page d'accueil et sur la page realisations.html
 				#blocRealisation est utilisé pour définir le css commun aux deux pages
 				.realisationAccueil est utilisé pour les modifications liées au responsive design sur la page d'accueil
 			-->
-
+			<!-- class="realisationAccueil" permet de différencier la partie réalisation de la page d'accueil de celle de la page realisation.html -->
 			<section id="blocRealisation" class="realisationAccueil">
-				<h2>
+				<h1> 
 					Réalisations
-				</h2>
-				<article class="projets">
-					<a href="projet-presentation.html"><img src="img/presentation.jpg" alt="minitature du site de présentation"></a>
-					<h3>Site de présentation</h3>
+				</h1>
+				<div class="projets">
+					<a href="projet-presentation.html"><img src="img/presentation.jpg" alt="minitature du site de présentation"/></a>
+					<h3><a href="projet-presentation.html">Site de présentation</a></h3>
 					<p>
 						Site de présentation réalisé dans le cadre du test de positionnement pour intégrer la formation de développeur Web d'Openclassrooms.
 
 					</p>
 					<a class="bouton" href="projet-presentation.html">Découvrir</a>
-				</article>
-				<article class="projets projetsFuturs">
-					<a href="#"><img src="img/comingsoon.jpg" alt="image où est inscrit Coming soon"></a>
+				</div>
+				<div class="projets projetsFuturs">
+					<a href="#"><img src="img/comingsoon.jpg" alt="image où est inscrit Coming soon"/></a>
 					<h3>Prochainement</h3>
 					<p>
 						Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.
 
 					</p>
 					<a class="bouton" href="#">Découvrir</a>
-				</article>
-				<article class="projets projetsFuturs">
-					<a href="#"><img src="img/comingsoon.jpg" alt="image où est inscrit Coming soon"></a>
-					<h3>Prochainement </h3>
-					<p>
-						Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.
-
-					</p>
-					<a class="bouton" href="#">Découvrir</a>
-				</article>
-				<article class="projets projetsFuturs">
-					<a href="#"><img src="img/comingsoon.jpg" alt="image où est inscrit Coming soon"></a>
+				</div>
+				<div class="projets projetsFuturs">
+					<a href="#"><img src="img/comingsoon.jpg" alt="image où est inscrit Coming soon"/></a>
 					<h3>Prochainement</h3>
 					<p>
 						Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.
 
 					</p>
 					<a class="bouton" href="#">Découvrir</a>
-				</article>
-				<article class="projets projetsFuturs">
-					<a href="#"><img src="img/comingsoon.jpg" alt="image où est inscrit Coming soon"></a>
+				</div>
+				<div class="projets projetsFuturs">
+					<a href="#"><img src="img/comingsoon.jpg" alt="image où est inscrit Coming soon"/></a>
 					<h3>Prochainement</h3>
 					<p>
 						Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.
 
 					</p>
 					<a class="bouton" href="#">Découvrir</a>
-				</article>
-				<article class="projets projetsFuturs">
-					<a href="#"><img src="img/comingsoon.jpg" alt="image où est inscrit Coming soon"></a>
+				</div>
+				<div class="projets projetsFuturs">
+					<a href="#"><img src="img/comingsoon.jpg" alt="image où est inscrit Coming soon"/></a>
 					<h3>Prochainement</h3>
 					<p>
 						Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.
 
 					</p>
 					<a class="bouton" href="#">Découvrir</a>
-				</article>
+				</div>
+				<div class="projets projetsFuturs">
+					<a href="#"><img src="img/comingsoon.jpg" alt="image où est inscrit Coming soon"/></a>
+					<h3>Prochainement</h3>
+					<p>
+						Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.
+
+					</p>
+					<a class="bouton" href="#">Découvrir</a>
+				</div>
 				<a href="realisations.html" id="toutesRea" class="bouton">Décrouvrir toutes les réalisations</a>
 			</section>
-
 		</div>
 
+		<!-- la section #contact ne se trouve pas dans la balise nav pour pouvoir être déplacée pour les petites tailles d'écran  -->
+		<section id="contact">
+			<h1> Contact</h1>
+			<p> Vous pouvez me contacter par mail : <br/><a class="bouton" href="mailto:garcia.jeanloic@gmail.com">garcia.jeanloic@gmail.com</a></p>
+			<p> Ou par téléphone : <br/> <a class="bouton" href="tel:+33766523112"> 07 66 52 31 12</a></p>
+		</section>
+		<footer>
+			<p>Design inspiré du template <a href="https://html5up.net/editorial">éditorial </a></p>
+		</footer>
 	</div>
-	
-	<!-- la section #contact ne se trouve pas dans la balise nav pour pouvoir être déplacée pour les petites tailles d'écran  -->
-	<section id="contact">
-		<h2> Contact</h2>
-		<p> Vous pouvez me contacter par mail : <br/><a class="bouton" href="mailto:garcia.jeanloic@gmail.com">garcia.jeanloic@gmail.com</a></p>
-		<p> Ou par téléphone : <br/> <a class="bouton" href="tel:+33766523112"> 07 66 52 31 12</a></p>
-	</section>
-	<footer>
-		<p>Design inspiré du template <a href="https://html5up.net/editorial">éditorial </a></p>
-	</footer>
-</div>
 </body>
 </html>

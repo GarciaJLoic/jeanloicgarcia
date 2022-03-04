@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width" />
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="shortcut icon" href="favicon.ico" />
 	<script src="https://kit.fontawesome.com/adbb9513cb.js" crossorigin="anonymous"></script> <!-- mise en place du script du site fontawesome qui permet d'accéder aux icones de leur site-->
 	<script src="script.js"></script>
 
@@ -13,19 +14,19 @@
 	<div id="blocPage">
 		<!-- Menu latéral gauche fixe-->
 		<nav>
-			<h2>Menu</h2>
+			<h1>Menu</h1>
 			<ul>
 				<li><a href="index.html">Présentation</a></li>
 				<li><a href="index.html#blocCompetences">Compétences</a></li>
 				<li><a href="index.html#blocRealisation">Projets</a></li>
 			</ul>
-			
+
 		</nav>
-		
+
 		<!-- Partie principale du site comprenant le header et les différentes sections -->
 		<div id="blocCorps">
 			<header>
-				<a href="index.html" id="nom">GARCIA Jean-Loïc</a>
+				<h1><a href="index.html" id="nom">GARCIA Jean-Loïc</a></h1>
 				<!-- Liste des liens sous forme d'icones dans le header -->
 				<ul>
 					<li><a href="https://github.com/GarciaJLoic" class="fa-brands fa-github" title="GitHub"></a></li> <!-- icone issu du site fontawesome  -->
@@ -33,100 +34,106 @@
 					<li class="projetsFuturs" title="A venir"><a href="#" class="fa-brands fa-linkedin" title="Linkedin"></a></li> 
 				</ul>
 			</header>		
-			<div id="contenu">
-				<section>
-					<article id ="projetPresentation">
-						<h1> Site de Présentation</h1>
-						<a href="index.html"><img src="img/presentationMax.jpg" alt="minitature du site de présentation"></a>
-						<p>
-							<a href="index.html">Le Site de présentation</a> a été réalisé dans le cadre du test de positionnement pour intégrer la formation de développeur Web d'Openclassrooms, mais il me servira aussi de support pour présenter les différents projets que je réaliserais au cours de ma formation et plus généralement lors de mon parcours professionnel. Vous pouvez découvrir <a href="index.html">le Site de présentation</a> et le lien vers le <a href="https://github.com/GarciaJLoic">le projet sur GitHub</a>
-						</p>
-						<p>
-							J'ai choisi <a href="https://html5up.net/editorial">editorial</a>, un template trouvé sur le site <a href="https://html5up.net/">HTML5Up</a>, comme base pour le design. Je cherchais un visuel simple et épuré afin de mettre l'accent sur le contenu plutôt que sur le visuel. J'ai dû modifier certains éléments, notamment pour les petits écrans, pour l'adapter à mes besoins.
-						</p>
-						<p>
-							Le site se décompose en 3 parties : présentation, compétences et réalisations. J'ai fait le choix de fixer le menu à gauche pour permettre de faciliter la navigation, ce que le template d'origine ne proposait pas. Pour les petites tailles d'écrans, le menu vient se positionner en haut du site, permettant de gagner de la place.
 
-						</p>
-						<aside>
-							<img src="img/menuLatéral.jpg" alt="minitature menu latéral">
-							<img src="img/menuHaut.jpg" alt="minitature menu placé en Haut pour les tailles d'écran réduite">
-						</aside>
-						<p>
-							J'ai intégré dans la partie présentation des icones représentant certains langages importants dans le développement avec une petite animation pour ajouter un peu de dynamisme.
-						</p>
-						<aside>
-							<img src="img/moduleLangage.jpg" alt="minitature du module langages représentant les icones de lagages de développement">
-						</aside>
-						<p>
-							Il est à noter qu'à l'origine, j'avais réalisé cette fonctionnalité en HTML5/CSS3. Je savais que le langage le plus adapté dans cette situation était le javaScript, mais je ne savais pas dans quelle mesure je pouvais utiliser du JavaScript dans le cadre d'un test de positionnement basé sur MOOC traitant du HTML5/CSS.
-						</p>
-						<p>
-							J'ai fini par décider de chercher une solution en JavaScript. Malgré tout la première solution est fonctionnelle et bien qu'elle soit valide W3C, on ne peut pas dire qu'elle soit très"propre".
-						</p>
-						<aside id="langagesV1">
-							<div id="boutonMaitrise"><button class="bouton">Langages maitrisés</button>
-								<div class="zoneIcones zoneMaitrise">
-									<p>Pas encore de langage maitrisé</p>
-								</div>
+			<article id ="projetPresentation">
+				<h1> Site de Présentation</h1>
+				<a href="index.html"><img src="img/presentationMax.jpg" alt="minitature du site de présentation"/></a>
+				<p>
+					<a href="index.html">Le site de présentation</a> a été réalisé dans le cadre du test de positionnement pour intégrer la formation de développeur Web d'Openclassrooms, mais il me servira aussi de support pour présenter les différents projets que je réaliserai au cours de ma formation et plus généralement lors de mon parcours professionnel. Vous pouvez découvrir <a href="index.html">le site de présentation</a> et le lien vers le <a href="https://github.com/GarciaJLoic/jeanloicgarcia">le projet sur GitHub</a>
+				</p>
+				<p>
+					J'ai choisi <a href="https://html5up.net/editorial">editorial</a>, un template trouvé sur le site <a href="https://html5up.net/">HTML5Up</a>, comme base pour le design. Je cherchais un visuel simple et épuré afin de mettre l'accent sur le contenu plutôt que sur le visuel. J'ai dû modifier certains éléments, notamment pour les petits écrans, afin de l'adapter à mes besoins.
+				</p>
+				<p>
+					Le site se décompose en 3 parties : présentation, compétences et réalisations. J'ai fait le choix de fixer le menu à gauche pour permettre de faciliter la navigation, ce que le template d'origine ne proposait pas. Pour les petites tailles d'écrans, le menu vient se positionner en haut du site, permettant de gagner de la place.
+
+				</p>
+				<figure>
+					<img src="img/menuLatéral.jpg" alt="minitature menu latéral"/>
+					<img src="img/menuHaut.jpg" alt="minitature menu placé en Haut pour les tailles d'écran réduite"/>
+					<figcaption>Selon la taille de l'écran de l'utilisateur le menu s'affichera à gauche ou en haut. Dans les deux cas il sera en position fixed.</figcaption>
+				</figure>
+				<p>
+					J'ai intégré dans la partie présentation des icones représentant certains langages importants dans le développement avec une petite animation pour ajouter un peu de dynamisme.
+				</p>
+				<figure>
+					<img src="img/moduleLangage.jpg" alt="minitature du module langages représentant les icones de lagages de développement"/>
+					<figcaption>Dans cette version j'ai utilise le JavaScript pour gérer l'animation.</figcaption>
+				</figure>
+				<p>
+					Il est à noter qu'à l'origine, j'avais réalisé cette fonctionnalité en HTML5/CSS3. Je savais que le langage le plus adapté dans cette situation était le javaScript, mais je ne savais pas dans quelle mesure je pouvais utiliser du JavaScript dans le cadre d'un test de positionnement basé sur MOOC traitant du HTML5/CSS.
+				</p>
+				<p>
+					J'ai fini par décider de chercher une solution en JavaScript. Malgré tout la première solution est fonctionnelle et bien qu'elle soit valide W3C, on ne peut pas dire qu'elle soit très"propre".
+				</p>
+				<div id="langagesV1">
+							<!-- Avec :hover on ne pas modifier un autre élement qui n'est pas directement survolé .eca:hover ne modifie donc pas tous les élements .eca mais seulement celui qui est survolé.
+							Sauf s'il sagit des enfants de l'élément survolé. Ainsi #boutonEncours:hover .eca premet de cibler les élements .eca lorsque l'on survole #boutonEncours
+							à condition que #boutonEncours soit parent de .eca.
+						-->
+						<div id="boutonMaitrise">
+							<button class="bouton">Langages maitrisés</button>
+							<div class="zoneIcones zoneMaitrise"> <!-- Les .zoneIcones sont à l'interrieur des id boutons pour faire fonctionner le :hover et sont placées en position absolue pour les sortir du flux -->
+								<p>Pas encore de langage maitrisé</p>
 							</div>
-							<div id="boutonEncours">
-								<button class="bouton">En cours d'apprentissage</button>
-								<div class="zoneIcones">
-									<span class="eca iconeLang fa-brands fa-html5"></span>
-									<span class="eca iconeLang fa-brands fa-css3"></span>
-									<span class="eca iconeLang fa-brands fa-js"></span>
-								</div>
+						</div>
+						<div id="boutonEncours">
+							<button class="bouton">En cours d'apprentissage</button>
+							<div class="zoneIcones"> <!-- Les .zoneIcones sont à l'interrieur des id boutons pour faire fonctionner le :hover et sont placées en position absolue pour les sortir du flux -->
+								<span class="eca iconeLang fa-brands fa-html5"></span>
+								<span class="eca iconeLang fa-brands fa-css3"></span>
+								<span class="eca iconeLang fa-brands fa-js"></span>
 							</div>
-							<div id="boutonAvenir">
-								<button class="bouton">A venir</button>
-								<div class="zoneIcones zoneAv">
-									<span class="av iconeLang fa-brands fa-php"></span>
-									<span class="av iconeLang fa-brands fa-python"></span>
-									<span class="av iconeLang fa-brands fa-java"></span>
-								</div>
+						</div>
+						<div id="boutonAvenir">
+							<button class="bouton">À venir</button>
+							<div class="zoneIcones zoneAv"> <!-- Les .zoneIcones sont à l'interrieur des id boutons pour faire fonctionner le :hover et sont placées en position absolue pour les sortir du flux -->
+								<span class="av iconeLang fa-brands fa-php"></span>
+								<span class="av iconeLang fa-brands fa-python"></span>
+								<span class="av iconeLang fa-brands fa-java"></span>
 							</div>
-							<div id="cache"></div>
-						</aside>
-						<p>
-							Le template que j'ai choisi utilise le site <a href="https://fontawesome.com/">fontawesome</a> pour gérer les icones. Ne connaissant pas le système, j'ai choisi de l'utiliser pour découvrir son fonctionnement et bénéficier de sa base de données d'icones.
-						</p>
-						<p>
-							Le responsive design étant primordial aujourd'hui j'ai porté une attention particulière à l'optimisation pour les différentes tailles d'écrans.
-						</p>
-						<p>
-							En effet, certains éléments changent selon la taille de l'écran de l'utilisateur, notamment dans la partie "réalisations" :
-							<ul>
-								<li>Déplacement de la zone de menu et de contact</li>
-								<li>Réorganisation des différents éléments</li>
-								<li>Réduction du nombre d'éléments affichés</li>
-								<li>Disparition de certains éléments.</li>
-							</ul>
-						</p>
-						<aside>
-							<img src="img/miniature1200.jpg" alt="miniature du site pour une largeur d'écran de 1200px">
-							<img src="img/miniature800.jpg" alt="miniature du site pour une largeur d'écran de 800px">
-							<img src="img/miniature400.jpg" alt="miniature du site pour une largeur d'écran de 400px">
-						</aside>
-						<p>
-							Le site reste simple, mais l'objectif est de l'enrichir au fur et à mesure de mon apprentissage.
-						</p>
-					</article>
-				</section>
+						</div>
+						<div id="cache"></div> <!-- Une div invisible qui permet de "cacher" les .zoneIcones et empecher l'activation du :hover lors du survol des éléments -->
+					</div>
+					<p>
+						Le template que j'ai choisi utilise le site <a href="https://fontawesome.com/">fontawesome</a> pour gérer les icones. Ne connaissant pas le système, j'ai choisi de l'utiliser pour découvrir son fonctionnement et bénéficier de sa base de données d'icones.
+					</p>
+					<p>
+						Le responsive design étant primordial aujourd'hui j'ai porté une attention particulière à l'optimisation pour les différentes tailles d'écrans.
+					</p>
+					<p>
+						En effet, certains éléments changent selon la taille de l'écran de l'utilisateur, notamment dans la partie "réalisations" :
+					</p>
+
+					<ul>
+						<li>Déplacement de la zone de menu et de contact</li>
+						<li>Réorganisation des différents éléments</li>
+						<li>Réduction du nombre d'éléments affichés</li>
+						<li>Disparition de certains éléments.</li>
+					</ul>
+					<figure>
+						<img src="img/miniature1200.jpg" alt="miniature du site pour une largeur d'écran de 1200px"/>
+						<img src="img/miniature800.jpg" alt="miniature du site pour une largeur d'écran de 800px"/>
+						<img src="img/miniature400.jpg" alt="miniature du site pour une largeur d'écran de 400px"/>
+						<figcaption>L'affichage de la partie Réalisation s'adapte à la taille de de l'écran de l'utilisateur.</figcaption>
+					</figure>
+					<p>
+						Le site reste simple, mais l'objectif est de l'enrichir au fur et à mesure de mon apprentissage.
+					</p>
+				</article>
+
 
 			</div>
 
+			<!-- la section #contact ne se trouve pas dans la balise nav pour pouvoir être déplacée pour les petites tailles d'écran  -->
+			<section id="contact">
+				<h1> Contact</h1>
+				<p> Vous pouvez me contacter par mail : <br/><a class="bouton" href="mailto:garcia.jeanloic@gmail.com">garcia.jeanloic@gmail.com</a></p>
+				<p> Ou par téléphone : <br/> <a class="bouton" href="tel:+33766523112"> 07 66 52 31 12</a></p>
+			</section>
+			<footer>
+				<p>Design inspiré du template <a href="https://html5up.net/editorial">éditorial </a></p>
+			</footer>
 		</div>
-
-		<!-- la section #contact ne se trouve pas dans la balise nav pour pouvoir être déplacée pour les petites tailles d'écran  -->
-		<section id="contact">
-			<h2> Contact</h2>
-			<p> Vous pouvez me contacter par mail : <br/><a class="bouton" href="mailto:garcia.jeanloic@gmail.com">garcia.jeanloic@gmail.com</a></p>
-			<p> Ou par téléphone : <br/> <a class="bouton" href="tel:+33766523112"> 07 66 52 31 12</a></p>
-		</section>
-		<footer>
-			<p>Design inspiré du template <a href="https://html5up.net/editorial">éditorial </a></p>
-		</footer>
-	</div>
-</body>
-</html>
+	</body>
+	</html>
