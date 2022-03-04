@@ -5,6 +5,8 @@
 	<meta name="viewport" content="width=device-width" />
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<script src="https://kit.fontawesome.com/adbb9513cb.js" crossorigin="anonymous"></script> <!-- mise en place du script du site fontawesome qui permet d'accéder aux icones de leur site-->
+	<script src="script.js"></script>
+
 	<title>Garcia Jean-Loïc, site de présentation</title>
 </head>
 <body>
@@ -32,41 +34,33 @@
 				</ul>
 			</header>		
 			<div id="contenu">
-				<!-- Texte de présentation -->
+				<!-- Partie présentation -->
 				<section id="blocPresentation">
-					<article>
+					<div id="textePresentation">
 						<h1>Hi, I’m Editorial<br/>by HTML5 UP</h1>
 						<h2>A FREE AND FULLY RESPONSIVE SITE TEMPLATE</h2>
 						<p>Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam facilisis ante interdum congue. Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet egestas mauris. Ut magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas. Pellentesque sapien ac quam. Lorem ipsum dolor sit nullam.
 
 						</p>
-					</article>
+					</div>
 					<!-- Ensemble de langages de développement sous-forme d'icone avec une animation au survol des boutons -->
-					<aside id="langages">
-						<div id="boutonMaitrise"><button class="bouton">Langages maitrisés</button>
-							<div class="zoneIcones zoneMaitrise">
-								<p>Pas encore de langage maitrisé</p>
-							</div>
+					<div id="langages">
+						<div id="iconeBloc">
+							<span class="eca iconeLang fa-brands fa-html5"></span>
+							<span class="av iconeLang fa-brands fa-php"></span>
+							<span class="av iconeLang fa-brands fa-python"></span>
+							<span class="eca iconeLang fa-brands fa-css3"></span>
+							<span class="av iconeLang fa-brands fa-java"></span>
+							<span class="eca iconeLang fa-brands fa-js"></span>		
 						</div>
-						<div id="boutonEncours">
-							<button class="bouton">En cours d'apprentissage</button>
-							<div class="zoneIcones">
-								<span class="eca iconeLang fa-brands fa-html5"></span>
-								<span class="eca iconeLang fa-brands fa-css3"></span>
-								<span class="eca iconeLang fa-brands fa-js"></span>
-							</div>
-						</div>
-						<div id="boutonAvenir">
-							<button class="bouton">A venir</button>
-							<div class="zoneIcones zoneAv">
-								<span class="av iconeLang fa-brands fa-php"></span>
-								<span class="av iconeLang fa-brands fa-python"></span>
-								<span class="av iconeLang fa-brands fa-java"></span>
-							</div>
-						</div>
-					</aside>
-					<!-- Div qui permet d'empecher le survol des icones !-->
-					<div id="cache"></div>
+						<p class="maitrise"> Pas encore de langage maitrisé</p>
+						<ul>
+							<li class="bouton" onmouseover="changeStyleMouseOver('maitrise',' maitriseH')" onmouseleave="changeStyleMouseLeave('maitrise',' maitriseH')">Langages maitrisé</li>
+							<li  class="bouton" onmouseover="changeStyleMouseOver('eca',' ecaH')" onmouseleave="changeStyleMouseLeave('eca',' ecaH')">En cours d'apprentissage</li>
+							<li  class="bouton" onmouseover="changeStyleMouseOver('av',' avH')" onmouseleave="changeStyleMouseLeave('av',' avH')">A venir</li>
+						</ul>
+
+					</div>
 				</section>
 				<!-- Textes de présentation des différentes compétences -->
 				<section id="blocCompetences">

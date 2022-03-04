@@ -159,64 +159,51 @@ header li a img:hover{
 	font-size: 1.17em;
 }
 /* Dimensions et marges des éléments du blocPresentation */
-#blocPresentation article, #langages{
+#textePresentation, #langages{
 	flex: 1;
 	margin: 0px 20px;
 }
-
-#langages{
-	display: flex;
-	align-items: flex-end;
-	justify-content: space-around;
-	position: relative;
-	height: 370px;
-}
 .iconeLang{
 	font-size: 6em;
+	width: 30%;
 }
-.eca, .av{
-	color: #7f888f;
-	transition: color 0.5s;
-	flex: 1;
-}
-#blocPresentation .bouton {
-    width: 170px;
-    padding: 0px;
-}
-#boutonEncours:hover .eca, #boutonAvenir:hover .av{
-	color: #f56a6a;
-	transition: color 0.5s;
-}
-#boutonMaitrise:hover .zoneMaitrise {
-	opacity: 1;
-	transition: opacity 0.5s;
 
-}
-/* Permet d'empecher le survol des zones icones */ 
-#cache{
-	position: absolute;
-	top: 190px;
-	width: 32%;
-	height: 315px;
-	left: 60%;
-}
-.zoneIcones{
-	position: absolute; /* Permet de positionner les icones différement des boutons */
-	top: 0px;
-	left: 0px;
-	width: 100%;
+#iconeBloc{
 	display: flex;
+	flex-wrap: wrap;
+	align-content: space-around;
+	height: 270px;
 	justify-content: space-around;
 	text-align: center;
 }
-.zoneAv{
-	top: 120px;
+#langages ul{
+	list-style: none;
+	display: flex;
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
 }
 
-.zoneMaitrise{
-	opacity: 0;
-	top: 240px;
+.eca, .av{
+	color: #7f888f;
+	transition: color 0.5s;
+}
+.ecaH, .avH{
 	color: #f56a6a;
+	transition: color 0.5s;
+}
+
+
+.maitrise {
+	opacity: 0;
+	color: #f56a6a;
+	transition: opacity 0.5s;
+	text-align: center;
+}
+
+
+.maitriseH {
+	opacity: 1;
 	transition: opacity 0.5s;
 }
 
@@ -328,7 +315,7 @@ header li a img:hover{
 	color: #f56a6a;
 	border: solid 2px #f56a6a;
 	border-radius: 8px;
-	padding: 0px 20px;
+	padding: 0px 8px;
 	line-height: 40px;
 	font-family: 'roboto_slabregular', serif;
 	font-weight: bold;
@@ -487,7 +474,7 @@ footer p{
 		flex-direction: column; /*Permet d'afficher les élements du bloc verticalement*/
 		height: 680px; /* Défini la taille pour prendre en compte les blocs icones qui sont en position absolue */
 	}
-	#blocPresentation article, #langages {
+	#textePresentation, #langages {
 		padding: 20px;
 		text-align: center;
 	}
