@@ -69,12 +69,14 @@ nav li{
 	padding: 10px 0px;
 	border-bottom: solid 1px rgba(210, 215, 217, 0.75);
 }
-nav li a, footer a{
+nav li a, footer a, #projetPresentation a{
 	color :#676d79;
+	font-weight: bold;
 	text-decoration: none;
 	transition: color 0.5s; /* Transition de la couleur lorsque le curseur quitte le lien */
 }
-nav li a:hover, footer a:hover{
+
+nav li a:hover, footer a:hover, #projetPresentation a:hover{
 	color :#f56a6a;
 	transition: color 0.5s; /* Transition de la couleur lorsque le curseur survole le lien */
 }
@@ -169,8 +171,8 @@ header li a img:hover{
 #textePresentation{
 	min-width:450px;
 }
- #langages{
- 	min-width:600px;
+#langages{
+	min-width:600px;
 }
 .iconeLang{
 	font-size: 6em;
@@ -193,11 +195,12 @@ header li a img:hover{
 	margin: 0px;
 }
 #langages li {
-    flex: 1;
-    text-align: center;
-    font-size: 0.9em;
-    margin: 0px 5px;
-    padding: 0px 5px;
+	flex: 1;
+	text-align: center;
+	font-size: 0.9em;
+	margin: 0px 5px;
+	padding: 0px 5px;
+	cursor: help;
 }
 .eca, .av{
 	color: #7f888f;
@@ -372,6 +375,123 @@ footer p{
 	padding-right: 50px;
 }
 
+/* Page Projet */
+
+#projetPresentation{
+	display: flex;
+	padding: 20px 0px;
+	align-items: center;
+	text-align: justify;
+	flex-direction: column;
+}
+#projetPresentation h1{
+	font-size: 3em;
+}
+#projetPresentation p, #projetPresentation ul{
+	width: 100%;
+}
+#projetPresentation img{
+    margin-bottom: 30px;
+    border: solid 2px;
+
+}
+#projetPresentation aside{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+
+
+/* Première version de la fonctionalité de langages */
+#projetPresentation #langagesV1{
+	border: solid 2px;
+	border-radius: 10px;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: flex-end;
+	align-self: center;
+	justify-content: space-around;
+	position: relative;
+	height: 370px;
+    min-width: 530px;
+    max-width: 700px;
+	margin: 0px 10px;
+	padding: 30px;
+	width: 80%;
+}
+#projetPresentation.iconeLang{
+	font-size: 6em;
+}
+#projetPresentation .eca, #projetPresentation .av{
+	color: #7f888f;
+	transition: color 0.5s;
+	flex: 1;
+}
+#projetPresentation .bouton {
+    width: 175px;
+    padding: 0px;
+}
+#projetPresentation #boutonEncours:hover .eca, #projetPresentation #boutonAvenir:hover .av{
+	color: #f56a6a;
+	transition: color 0.5s;
+}
+#projetPresentation #boutonMaitrise:hover .zoneMaitrise p {
+	opacity: 1;
+	transition: opacity 0.5s;
+
+}
+
+#projetPresentation #langagesV1 a {
+	text-align: center;
+}
+/* Permet d'empecher le survol des zones icones */ 
+#projetPresentation #cache{
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 353px;
+}
+#projetPresentation .zoneIcones{
+	position: absolute; /* Permet de positionner les icones différement des boutons */
+	top: 30px;
+	left: 0px;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+}
+#projetPresentation .zoneAv{
+	top: 150px;
+}
+
+#projetPresentation .zoneMaitrise{
+	top: 270px;
+}
+#projetPresentation .zoneMaitrise p{
+	opacity: 0;
+	color: #f56a6a;
+	transition: opacity 0.5s;
+}
+@media all and (max-width: 800px){
+	#projetPresentation img{
+		max-width: 500px;
+	}
+}
+@media all and (max-width: 640px){
+	#projetPresentation #langagesV1, #projetPresentation #cache{
+		display: none;
+	}
+	#projetPresentation img{
+		max-width: 400px;
+	}
+}
+@media all and (max-width: 400px){
+	#projetPresentation img{
+		max-width: 300px;
+	}
+}
 /* Responsive design  */
 
 @media all and (min-width: 1460px) and (max-width: 1720px) 
@@ -623,6 +743,12 @@ footer p{
 	#toutesRea {
 		margin-top: 40px;
 	}
+	.projets img {
+		transform: scale(0.8);
+	}
+	.projets img:hover {
+		transform: scale(1);
+	}
 }
 
 @media all and (max-width: 660px){
@@ -648,7 +774,11 @@ footer p{
 	#blocCorps{
 		padding-top: 30px;
 	}
-	#langages, #cache{
+	#textePresentation{
+		min-width: auto; /* Permet d'annulé le min-width pour les petits écrans */
+		margin: 0px;
+	}
+	#langages{
 		display: none; /* Fait disparaître le bloc des langages sur les petits écrans */
 	}
 	#blocCompetences{
@@ -673,3 +803,5 @@ footer p{
 	}
 
 }
+
+
