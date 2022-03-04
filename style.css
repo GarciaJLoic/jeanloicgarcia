@@ -148,6 +148,7 @@ header li a img:hover{
 	border-bottom: solid 2px ; /* Ligne de séparation visuelle en bas du bloc */
 	align-items: center;
 	text-align: justify;
+	flex-wrap: wrap; /* Permet à #textPresenations et #Langages d'être affiché sur deux lignes lorsque de la taille de l'écran est trop petite */
 }
 #blocPresentation h1{
 	font-size: 4em;
@@ -162,6 +163,14 @@ header li a img:hover{
 #textePresentation, #langages{
 	flex: 1;
 	margin: 0px 20px;
+}
+
+/* Defini une taille minimum pour #textePresentation et #langages */
+#textePresentation{
+	min-width:450px;
+}
+ #langages{
+ 	min-width:600px;
 }
 .iconeLang{
 	font-size: 6em;
@@ -183,7 +192,13 @@ header li a img:hover{
 	padding: 0px;
 	margin: 0px;
 }
-
+#langages li {
+    flex: 1;
+    text-align: center;
+    font-size: 0.9em;
+    margin: 0px 5px;
+    padding: 0px 5px;
+}
 .eca, .av{
 	color: #7f888f;
 	transition: color 0.5s;
@@ -224,7 +239,6 @@ header li a img:hover{
 	display: flex;
 	flex-grow: 1; /* Permet aux éléments de grossir pour prendre tout l'espace disponible */
 	width: 40%;
-	height: 250px;
 }
 .competencesTextes{
 	display: flex;
@@ -239,9 +253,14 @@ header li a img:hover{
 	font-size: 4em;
 	margin-top: 50px;
 	background: url(img/backgroundIcone.png);
-	padding: 55px 58px 0px 58px;
+	padding: 52px 58px 0px 49px;
 	background-repeat: no-repeat;
 }
+
+.competences:nth-of-type(3) span, .competences:nth-of-type(4) span{
+	padding: 51px 58px 0px 58px;
+}
+
 #blocRealisation{
 	display: flex; /* Positionnement des éléments */
 	flex-wrap: wrap; /* Permet aux éléments d'aller à la ligne */
@@ -337,7 +356,7 @@ header li a img:hover{
 
 
 .projetsFuturs>a, .projetsFuturs>p{
-	opacity: 10%; 
+	opacity: 0.1; 
 	pointer-events: none; /* Désactive l'utilisation de la souris sur les élements des futurs projets */
 	user-select: none; /* Désactive la sélection des textes des éléments des futurs projets */
 }
@@ -472,7 +491,6 @@ footer p{
 	#blocPresentation{ 
 		padding: 50px 0px;
 		flex-direction: column; /*Permet d'afficher les élements du bloc verticalement*/
-		height: 680px; /* Défini la taille pour prendre en compte les blocs icones qui sont en position absolue */
 	}
 	#textePresentation, #langages {
 		padding: 20px;
@@ -496,7 +514,6 @@ footer p{
 	}
 	.competences{ /* Permet d'afficher les icones et le texte verticalement et de les centrer*/
 		flex-direction: column; 
-		height: 320px;
 		align-items: center;
 		margin-bottom: 50px;
 	}
@@ -506,9 +523,12 @@ footer p{
 		text-align: center;
 	}
 	.icone{
-		padding: 61px 70px 67px 64px;
+		padding: 63px 70px 67px 57px;
 		margin-top: 0px;
 		font-size: 3em;
+	}
+	.competences:nth-of-type(3) span, .competences:nth-of-type(4) span{
+		padding: 61px 70px 67px 64px;
 	}
 	.projets {
 		width: 39.5%;
@@ -541,20 +561,17 @@ footer p{
 }
 
 @media all and (max-width: 800px){
-	#blocPresentation{
-		height: 710px;
-	}
 
-	.icone{ /* Supprime le background pour gagner de la place sur les petits écran */
+	.icone, .competences:nth-of-type(3) span, .competences:nth-of-type(4) span{ /* Supprime le background pour gagner de la place sur les petits écran */
 		background: none;
 		padding: 0px;
 	}
+	
 	#blocCompetences{
 		padding: 0px;
 	}
 	.competences{
 		width: 100%;
-		height: 100%;
 		margin-bottom: 10px;
 	}
 	.projets{
@@ -630,9 +647,6 @@ footer p{
 	}
 	#blocCorps{
 		padding-top: 30px;
-	}
-	#blocPresentation{
-		height: 100%; /* Rétabli la taille du bloc initiale pour compenser la disparition de #langages */
 	}
 	#langages, #cache{
 		display: none; /* Fait disparaître le bloc des langages sur les petits écrans */
