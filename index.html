@@ -2,13 +2,14 @@
 <html lang="fr">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width" />
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<script src="https://kit.fontawesome.com/adbb9513cb.js" crossorigin="anonymous"></script> <!-- mise en place du script du site fontawesome qui permet d'accéder aux icones de leur site-->
 	<title>Garcia Jean-Loïc, site de présentation</title>
 </head>
 <body>
 	<div id="blocPage">
-	<!-- Menu latéral gauche fixe-->
+		<!-- Menu latéral gauche fixe-->
 		<nav>
 			<h2>Menu</h2>
 			<ul>
@@ -16,12 +17,9 @@
 				<li><a href="#blocCompetences">Compétences</a></li>
 				<li><a href="#blocRealisation">Projets</a></li>
 			</ul>
-			<section id="contact">
-				<h2> Contact</h2>
-				<p> Vous pouvez me contacter par mail : <br/><a class="bouton" href="mailto:garcia.jeanloic@gmail.com">garcia.jeanloic@gmail.com</a></p>
-				<p> Ou par téléphone : <br/> <a class="bouton" href="tel:+33766523112"> 07 66 52 31 12</a></p>
-			</section>
+			
 		</nav>
+		
 		<!-- Partie principale du site comprenant le header et les différentes sections -->
 		<div id="blocCorps">
 			<header>
@@ -34,11 +32,11 @@
 				</ul>
 			</header>		
 			<div id="contenu">
-				<!-- Texte de présentation avec un lien qui mène au CV -->
+				<!-- Texte de présentation -->
 				<section id="blocPresentation">
 					<article>
 						<h1>Hi, I’m Editorial<br/>by HTML5 UP</h1>
-							<h2>A FREE AND FULLY RESPONSIVE SITE TEMPLATE</h2>
+						<h2>A FREE AND FULLY RESPONSIVE SITE TEMPLATE</h2>
 						<p>Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam facilisis ante interdum congue. Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet egestas mauris. Ut magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas. Pellentesque sapien ac quam. Lorem ipsum dolor sit nullam.
 
 						</p>
@@ -56,44 +54,44 @@
 					<div class="competences">
 						<span class="icone fa-solid  fa-book"></span>
 						<div class="competencesTextes">
-						<h3> Portitor ullamcorper
-						</h3>
-						<p>
-							Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.
-						</p>
-					</div>
+							<h3> Portitor ullamcorper
+							</h3>
+							<p>
+								Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.
+							</p>
+						</div>
 					</div>
 					<div class="competences">
 						<span class="icone fa-solid  fa-book"></span>
 						<div class="competencesTextes">
-						<h3> Sapien veroeros
+							<h3> Sapien veroeros
 
-						</h3>
-						<p>
-							Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.
-						</p>
-					</div>
+							</h3>
+							<p>
+								Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.
+							</p>
+						</div>
 					</div>
 					<div class="competences">
 						<span class="icone fa-solid  fa-book"></span>
 						<div class="competencesTextes">
-						<h3> Quam lorem ipsum
+							<h3> Quam lorem ipsum
 
-						</h3>
-						<p>
-							Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.
-						</p>
-					</div>
+							</h3>
+							<p>
+								Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.
+							</p>
+						</div>
 					</div>
 					<div class="competences">
 						<span class="icone fa-solid  fa-book"></span>
 						<div class="competencesTextes">
-						<h3> Sed magna finibus
-						</h3>
-						<p>
-							Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.
-						</p>
-					</div>
+							<h3> Sed magna finibus
+							</h3>
+							<p>
+								Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.
+							</p>
+						</div>
 					</div>
 
 				</section>
@@ -156,12 +154,22 @@
 						</p>
 						<a class="bouton" href="#">Découvrir</a>
 					</article>
+					<a href="#" id="toutesRea" class="bouton">Décrouvrir toutes les réalisations</a>
 				</section>
+
 			</div>
-			<footer>
-				<p>Design inspiré du template <a href="https://html5up.net/editorial">éditorial </a></p>
-			</footer>
+			
 		</div>
+	
+	<!-- la section #contact ne se trouve pas dans la balise nav pour pouvoir être déplacée pour les petites tailles d'écran  -->
+	<section id="contact">
+		<h2> Contact</h2>
+		<p> Vous pouvez me contacter par mail : <br/><a class="bouton" href="mailto:garcia.jeanloic@gmail.com">garcia.jeanloic@gmail.com</a></p>
+		<p> Ou par téléphone : <br/> <a class="bouton" href="tel:+33766523112"> 07 66 52 31 12</a></p>
+	</section>
+	<footer>
+		<p>Design inspiré du template <a href="https://html5up.net/editorial">éditorial </a></p>
+	</footer>
 	</div>
 </body>
 </html>
