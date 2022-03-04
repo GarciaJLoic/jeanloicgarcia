@@ -368,6 +368,7 @@ footer p{
 		padding: 0px;
 		align-items: center;
 		justify-content: center;
+    	text-align: center; /* centre les éléments du menu pour les petites tailles d'écran */
 		z-index: 1; /* Permet au menu de passer au dessus des éléments*/
 
 	}
@@ -454,8 +455,15 @@ footer p{
 		border-right: none;
 		padding: 50px 0px 50px 50px;
 	}
-
-	#blocRealisation article:nth-of-type(5), #blocRealisation article:nth-of-type(6){
+	#blocRealisation article:nth-of-type(5) {
+		border-right: solid 2px;
+		border-top: solid 2px;
+		padding: 50px 50px 0px 0px;
+	}
+	#blocRealisation article:nth-of-type(6) {
+		border-top: solid 2px;
+	}
+	.realisationAccueil article:nth-of-type(5), .realisationAccueil article:nth-of-type(6){
 		display: none; /* Réduit le nombre de projets affichés selon la taille de l'écran */
 	}
 
@@ -509,8 +517,15 @@ footer p{
 		padding: 20px 0px;
 		border-top: solid 2px;
 	}
-	
-	.projetsFuturs{
+	#blocRealisation article:nth-of-type(5) {
+		border-right: none;
+		border-top: solid 2px;
+		padding: 20px 0px;
+	}
+	#blocRealisation article:nth-of-type(6) {
+		padding: 20px 0px;
+	}
+	.realisationAccueil .projetsFuturs{
 		display: none; /* Fait disparaître les projets futurs sur les petits écrans */
 	}
 
